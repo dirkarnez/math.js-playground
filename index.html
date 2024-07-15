@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/13.0.2/math.min.js" integrity="sha512-eHnr7xsiTjs+o34SmeN4c8tTGmWC1Q5g5OTBIjl/LFhFKhRpkuF7MCZpC7VQKqWVp88h82xZE/6Xp9azhcnDnA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+<body>
+    <script>
+        console.log(window.math.sqrt(-4).toString()) // 2i/
+
+        const scope = {
+            a: 3,
+            b: 4
+        }
+
+        // variable assignments are written to the scope
+        console.log(window.math.evaluate('c = 2.3 + 4.5', scope)) // 6.8
+        console.log(scope.c) // 6.8
+
+        // scope can contain both variables and functions
+        scope.hello = function (name) {
+            return 'hello, ' + name + '!'
+        }
+
+        console.log(window.math.evaluate('hello("hero")', scope)) // "hello, hero!"
+        
+        // define a function as an expression
+        const f = window.math.evaluate('f(x) = x ^ a', scope)
+        console.log(f(2)) // 8
+        console.log(scope.f(2)) // 8
+    </script>
+</body>
+</html>
