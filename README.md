@@ -14,3 +14,7 @@ math.js-playground
 - https://mathjs.org/examples/sparse_matrices.js.html
 - https://mathjs.org/examples/expressions.js.html
 - https://mathjs.org/docs/reference/functions/usolve.html
+- [Solving multivariate equations · Issue #218 · josdejong/mathjs](https://github.com/josdejong/mathjs/issues/218)
+- [google/mathsteps: Step by step math solutions for everyone](https://github.com/google/mathsteps)
+- **https://socratic.org/**
+- https://en.wikipedia.org/wiki/Differentiation_rules
