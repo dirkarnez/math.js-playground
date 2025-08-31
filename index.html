@@ -7,7 +7,7 @@
 </head>
 <body>
     <script>
-        console.log(window.math.sqrt(-4).toString()) // 2i/
+        console.log(math.sqrt(-4).toString()) // 2i/
 
         const scope = {
             a: 3,
@@ -15,7 +15,7 @@
         }
 
         // variable assignments are written to the scope
-        console.log(window.math.evaluate('c = 2.3 + 4.5', scope)) // 6.8
+        console.log(math.evaluate('c = 2.3 + 4.5', scope)) // 6.8
         console.log(scope.c) // 6.8
 
         // scope can contain both variables and functions
@@ -23,12 +23,16 @@
             return 'hello, ' + name + '!'
         }
 
-        console.log(window.math.evaluate('hello("hero")', scope)) // "hello, hero!"
+        console.log(math.evaluate('hello("hero")', scope)) // "hello, hero!"
         
         // define a function as an expression
-        const f = window.math.evaluate('f(x) = x ^ a', scope)
+        const f = math.evaluate('f(x) = x ^ a', scope)
         console.log(f(2)) // 8
         console.log(scope.f(2)) // 8
+
+        // ODE, PDE
+        console.log(math.derivative('x^2', 'x'));
     </script>
 </body>
+
 </html>
