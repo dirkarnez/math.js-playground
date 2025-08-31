@@ -1,5 +1,5 @@
-math.js-playground
-==================
+[math.js-playground](https://dirkarnez.github.io/math.js-playground)
+====================================================================
 - https://mathjs.org/examples/advanced/web_server/index.html
 - https://mathjs.org/examples/advanced/more_secure_eval.js.html
 - https://mathjs.org/examples/advanced/expression_trees.js.html
@@ -18,3 +18,4 @@ math.js-playground
 - [google/mathsteps: Step by step math solutions for everyone](https://github.com/google/mathsteps)
 - **https://socratic.org/**
 - https://en.wikipedia.org/wiki/Differentiation_rules
+
