@@ -4,9 +4,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/13.0.2/math.min.js" integrity="sha512-eHnr7xsiTjs+o34SmeN4c8tTGmWC1Q5g5OTBIjl/LFhFKhRpkuF7MCZpC7VQKqWVp88h82xZE/6Xp9azhcnDnA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <style> 
+        div {
+            -webkit-box-sizing: border-box;
+               -moz-box-sizing: border-box;
+                    box-sizing: border-box;
+        }
+        
+        textarea {
+          width: 100%;
+          height: 100%;
+              -webkit-box-sizing: border-box;
+               -moz-box-sizing: border-box;
+                    box-sizing: border-box;
+        }
+        .textarea-wrapper {
+          width: 100%;
+          height: 100px;
+        }
+    </style>
 </head>
 <body>
-    <textarea id="input"></textarea>
+    <div class="textarea-wrapper">
+    	<textarea id="input"></textarea>
+    </div>
     <div id="log"></div>
     <script>
         const input = document.getElementById("input");
@@ -46,4 +67,5 @@
 </body>
 
 </html>
+
 
