@@ -6,6 +6,16 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/13.0.2/math.min.js" integrity="sha512-eHnr7xsiTjs+o34SmeN4c8tTGmWC1Q5g5OTBIjl/LFhFKhRpkuF7MCZpC7VQKqWVp88h82xZE/6Xp9azhcnDnA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </head>
 <body>
+    <textarea id="input"></textarea>
+    <div id="log"></div>
+    <script>
+        const input = document.getElementById("input");
+        const log = document.getElementById("log");
+        
+        input.addEventListener("input", e => {
+        	log.textContent = `${math.evaluate(e.target.value)}`;
+        })
+    </script>
     <script>
         console.log(math.sqrt(-4).toString()) // 2i/
 
@@ -15,7 +25,7 @@
         }
 
         // variable assignments are written to the scope
-        console.log(math.evaluate('c = 2.3 + 4.5', scope)) // 6.8
+        console.log(('c = 2.3 + 4.5', scope)) // 6.8
         console.log(scope.c) // 6.8
 
         // scope can contain both variables and functions
@@ -36,3 +46,4 @@
 </body>
 
 </html>
+
