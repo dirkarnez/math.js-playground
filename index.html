@@ -25,7 +25,7 @@
     </style>
 </head>
 <body>
-    <p>Try<code>derivative('x^2', 'x')</code></p>
+    <p>Try <code>derivative('x^2', 'x')</code></p>
     <div class="textarea-wrapper">
     	<textarea id="input" placeholder="derivative('x^2', 'x')"></textarea>
     </div>
@@ -35,7 +35,8 @@
         const log = document.getElementById("log");
         
         input.addEventListener("input", e => {
-        	log.textContent = `${math.evaluate(e.target.value)}`;
+            const value = e.target.value;
+        	log.textContent = !!value ? `${math.evaluate(e.target.value)}` : "";
         })
     </script>
     <script>
@@ -68,6 +69,7 @@
 </body>
 
 </html>
+
 
 
 
