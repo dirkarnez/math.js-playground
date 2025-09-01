@@ -44,7 +44,13 @@
         
         input.addEventListener("input", e => {
             const value = e.target.value;
-        	log.textContent = !!value ? `${math.evaluate(e.target.value)}` : "";
+        	log.textContent = !!value ? `${(() => {
+                try {
+                    return math.evaluate(e.target.value);
+                } catch (e) {
+                    return "";
+                }
+            })()}` : "";
         })
     </script>
     <script>
@@ -77,6 +83,7 @@
 </body>
 
 </html>
+
 
 
 
