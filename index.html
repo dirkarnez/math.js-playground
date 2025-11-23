@@ -121,6 +121,9 @@
             { code: `sin(90 deg)`, answer: null, remarks: null },
             { code: `zeros(2, 2)`, answer: null, remarks: null },
             { code: `2 inch to cm`, answer: null, remarks: null },
+            { code: `s1=0.4356\ns2=0.1521\nm=20\nn=20\nz=(((s1/m)+ (s2/n))^2) / (((s1/m)^2/(m-1))+((s2/n)^2/(n-1)))`, answer: null, remarks: () => { 
+                return document.createTextNode("(Two-sample CI, both population mean unknown)");
+            }  }
         ].forEach(({ code, answer, remarks }) => {
             const codeElement = document.createElement("code");
             codeElement.innerText = code;
@@ -175,6 +178,7 @@
 </body>
 
 </html>
+
 
 
 
