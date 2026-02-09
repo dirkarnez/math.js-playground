@@ -19,12 +19,17 @@
 ### TODOs
 - [ ] convert to latex
 - [ ] show MathML using Temml
+- [ ] numeric calculus
+  - [math.js | an extensive math library for JavaScript and Node.js](https://mathjs.org/examples/browser/rocket_trajectory_optimization.html.html)
+- [ ] custom math operation
+    - [math.js | an extensive math library for JavaScript and Node.js](https://mathjs.org/examples/advanced/function_transform.js.html)
  
 ### Example
 - [bornova/numara-calculator: Simple notepad calculator built on Electron, powered by Math.js](https://github.com/bornova/numara-calculator)
 - [google/mathsteps: Step by step math solutions for everyone](https://github.com/google/mathsteps)
 - **https://socratic.org/**
 - https://en.wikipedia.org/wiki/Differentiation_rules
+
 
 
 
