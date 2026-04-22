@@ -67,11 +67,11 @@
         const log = document.getElementById("log");
 
         math.import({
-          DFT: function (n, k) {
+          DFT: function (array_argument) {
             //calculate n choose k
             // (do some stuff)
-            debugger;
-            return 123
+            const array = array_argument._data;
+            return array;
           }
         });
         
