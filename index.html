@@ -65,6 +65,15 @@
     <script>
         const input = document.getElementById("input");
         const log = document.getElementById("log");
+
+        math.import({
+          DFT: function (n, k) {
+            //calculate n choose k
+            // (do some stuff)
+            debugger;
+            return 123
+          }
+        });
         
         input.addEventListener("input", e => {
             const value = e.target.value;
